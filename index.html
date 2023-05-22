@@ -22,7 +22,7 @@
       <h1>Todo List</h1>
       <!--formulário onde o usuário vai fazer as ações-->
     </header>
-    <form id="todo-form"></form>
+    <form id="todo-form">
         <p>Adicionar Tarefas</p>
         <div class="form-control">
           <input type="text" id="todo-input" placeholder="O que você vai fazer?">
@@ -31,10 +31,10 @@
           </button>
         </div>
     </form>
-    <form id="edit-form">
+    <form id="edit-form" class="hide">
       <p>Edite sua tarefa:</p>
       <div class="form-control">
-        <input type="text" id="edit-form">
+        <input type="text" id="edit-input">
         <button type="submit">
           <i class="fa-solid fa-check-double"></i>
         </button>
@@ -53,7 +53,7 @@
       </div>
       <div id="filter">
         <h4>Filtrar:</h4>
-        <select id="filtar-select">
+        <select id="filter-select">
           <option value="all">Todos</option>
           <option value="all">Feitos</option>
           <option value="all">A fazer</option>
@@ -73,7 +73,7 @@
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
-      <div class="todo">
+      <div class="todo done">
         <h3>Estudar JavaScript</h3>
         <button class="finish-todo">
           <i class="fa-solid fa-check"></i>
